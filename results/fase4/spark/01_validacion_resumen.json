@@ -1,0 +1,9 @@
+{
+  "motor": "spark",
+  "version": "4.2.0",
+  "particiones": 16,
+  "filas": 600000,
+  "columnas": 40,
+  "redondeo_decimales_ingesta": 6,
+  "nota": "el lector CSV de Spark convierte inf en NULL"
+}

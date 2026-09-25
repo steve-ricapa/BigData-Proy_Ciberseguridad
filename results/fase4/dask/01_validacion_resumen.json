@@ -1,0 +1,10 @@
+{
+  "motor": "dask",
+  "version": "2026.8.0",
+  "particiones": 7,
+  "bloque": "16mb",
+  "hilos": 4,
+  "filas": 600000,
+  "columnas": 40,
+  "redondeo_decimales_ingesta": 6
+}

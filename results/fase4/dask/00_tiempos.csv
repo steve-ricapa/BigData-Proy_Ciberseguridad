@@ -1,0 +1,12 @@
+motor,id_operacion,operacion,segundos
+dask,00,Carga del dataset,0.06
+dask,01,Carga y validación del dataset,4.534
+dask,02,Limpieza de valores no válidos,4.5
+dask,03,Tratamiento de duplicados,7.508
+dask,04,Transformación de variables,2.347
+dask,05,Filtrado de tráfico,5.661
+dask,06,Agregaciones globales,3.202
+dask,07,Agrupaciones por clase y protocolo,4.197
+dask,08,Ordenamiento y Top-10,4.186
+dask,09,Métricas de ciberseguridad,15.916
+dask,10,Resumen consolidado por clase,8.385

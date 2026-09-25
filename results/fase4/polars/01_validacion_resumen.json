@@ -1,0 +1,10 @@
+{
+  "motor": "polars",
+  "version": "1.44.2",
+  "filas": 600000,
+  "columnas": 40,
+  "redondeo_decimales_ingesta": 6,
+  "nulos_totales": 18,
+  "infinitos_totales": 13,
+  "etiquetas_distintas": 34
+}

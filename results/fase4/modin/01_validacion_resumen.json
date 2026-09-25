@@ -1,0 +1,9 @@
+{
+  "motor": "modin",
+  "backend": "Dask",
+  "filas": 600000,
+  "columnas": 40,
+  "redondeo_decimales_ingesta": 6,
+  "nulos_totales": 18,
+  "etiquetas_distintas": 34
+}

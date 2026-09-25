@@ -1,0 +1,3 @@
+criterio,columnas_clave,filas_antes,filas_despues,duplicados_eliminados,pct_duplicados
+filas_completas,las 40 columnas,599987,395496,204491,34.082572
+columnas_clave,"Label, Protocol Type, Tot size, IAT, Rate, Number",599987,345902,254085,42.348418

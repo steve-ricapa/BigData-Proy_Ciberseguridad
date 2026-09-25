@@ -1,0 +1,7 @@
+columna,tipo,nulos,minimo,maximo,media,distintos,definicion
+size_kb,decimal,0,0.044922,4.645605,0.128457,,Tot size / 1024 (kilobytes)
+rate_mbps,decimal,0,0.0,7.340032,0.028514,,Rate / 1 000 000 (paquetes por segundo)
+coef_variacion,decimal,0,0.0,5.916701,0.105852,,Std / AVG (dispersion del tamaño de paquete)
+total_flags,decimal,0,0.0,2.38,0.613194,,Suma de los siete indicadores de flags TCP
+protocolo_principal,texto,0,,,,13,Protocolo con valor 1 en las columnas one-hot
+rango_iat,texto,0,,,,3,"IAT clasificado con los percentiles 50 y 95: bajo, medio, alto"

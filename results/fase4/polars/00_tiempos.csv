@@ -1,0 +1,12 @@
+motor,id_operacion,operacion,segundos
+polars,00,Carga del dataset,0.238
+polars,01,Carga y validación del dataset,0.247
+polars,02,Limpieza de valores no válidos,0.122
+polars,03,Tratamiento de duplicados,0.818
+polars,04,Transformación de variables,0.077
+polars,05,Filtrado de tráfico,0.05
+polars,06,Agregaciones globales,0.064
+polars,07,Agrupaciones por clase y protocolo,0.024
+polars,08,Ordenamiento y Top-10,0.043
+polars,09,Métricas de ciberseguridad,0.486
+polars,10,Resumen consolidado por clase,0.039

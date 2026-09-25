@@ -1,0 +1,12 @@
+motor,id_operacion,operacion,segundos
+modin,00,Carga del dataset,9.262
+modin,01,Carga y validación del dataset,161.104
+modin,02,Limpieza de valores no válidos,186.409
+modin,03,Tratamiento de duplicados,16.364
+modin,04,Transformación de variables,30.188
+modin,05,Filtrado de tráfico,7.524
+modin,06,Agregaciones globales,33.229
+modin,07,Agrupaciones por clase y protocolo,39.799
+modin,08,Ordenamiento y Top-10,5.587
+modin,09,Métricas de ciberseguridad,18.689
+modin,10,Resumen consolidado por clase,23.555

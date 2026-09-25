@@ -4,8 +4,8 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 
 ## Estado actual
 
-- **Fases completadas:** Fase 1 — Dataset; Fase 2 — Configuración de GCP; Fase 3 — Diseño de arquitectura.
-- **Fase actual:** Fase 4 — Procesamiento distribuido (pendiente).
+- **Fases completadas:** Fase 1 — Dataset; Fase 2 — Configuración de GCP; Fase 3 — Diseño de arquitectura; Fase 4 — Procesamiento con cuatro motores.
+- **Siguiente fase:** Fase 5 — Hadoop/MapReduce en Dataproc (todavía no creado).
 - **Documento de arquitectura:** `03_fase3_arquitectura/documentacion/arquitectura_big_data.md`
 - **Proyecto GCP:** `bigdata-proyecto1-ciciot2023`
 - **Bucket:** `gs://ciciot2023-bigdata-utec-proyecto1-gm/`
@@ -31,10 +31,12 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 └── configuracion/
 
 03_fase3_arquitectura/
-04_fase4_procesamiento/
+04_fase4_procesamiento/ # 4 notebooks, contrato común y validador
 05_fase5_hadoop/
 06_fase6_analisis/
 07_fase7_entregables/
+results/fase4/        # 40 consultas, CSV/JSON y tiempos por motor
+reports/              # Resumen y tiempos de la Fase 4
 ```
 
 ## Fase 1 — Dataset
@@ -52,6 +54,13 @@ El script utiliza por defecto:
 - Entrada: `01_fase1_datos/raw/`
 - Salida: `01_fase1_datos/muestra/CICIoT2023_sample_600k.csv`
 - Reporte: `01_fase1_datos/calidad/CICIoT2023_sample_600k_report.json`
+
+## Fase 4 — Procesamiento local
+
+Cuatro notebooks Jupyter (Polars, Dask, Modin y Spark), con diez operaciones
+cada uno. Instrucciones, dependencias y verificación reproducible en
+`04_fase4_procesamiento/README.md`; resultados y tiempos en `results/fase4/`,
+resumen en `reports/fase4_resumen.md`.
 
 ## Estructura prevista en Cloud Storage
 

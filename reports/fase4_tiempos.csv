@@ -1,0 +1,45 @@
+motor,id_operacion,operacion,segundos
+polars,00,Carga del dataset,0.238
+polars,01,Carga y validación del dataset,0.247
+polars,02,Limpieza de valores no válidos,0.122
+polars,03,Tratamiento de duplicados,0.818
+polars,04,Transformación de variables,0.077
+polars,05,Filtrado de tráfico,0.05
+polars,06,Agregaciones globales,0.064
+polars,07,Agrupaciones por clase y protocolo,0.024
+polars,08,Ordenamiento y Top-10,0.043
+polars,09,Métricas de ciberseguridad,0.486
+polars,10,Resumen consolidado por clase,0.039
+dask,00,Carga del dataset,0.06
+dask,01,Carga y validación del dataset,4.534
+dask,02,Limpieza de valores no válidos,4.5
+dask,03,Tratamiento de duplicados,7.508
+dask,04,Transformación de variables,2.347
+dask,05,Filtrado de tráfico,5.661
+dask,06,Agregaciones globales,3.202
+dask,07,Agrupaciones por clase y protocolo,4.197
+dask,08,Ordenamiento y Top-10,4.186
+dask,09,Métricas de ciberseguridad,15.916
+dask,10,Resumen consolidado por clase,8.385
+modin,00,Carga del dataset,9.262
+modin,01,Carga y validación del dataset,161.104
+modin,02,Limpieza de valores no válidos,186.409
+modin,03,Tratamiento de duplicados,16.364
+modin,04,Transformación de variables,30.188
+modin,05,Filtrado de tráfico,7.524
+modin,06,Agregaciones globales,33.229
+modin,07,Agrupaciones por clase y protocolo,39.799
+modin,08,Ordenamiento y Top-10,5.587
+modin,09,Métricas de ciberseguridad,18.689
+modin,10,Resumen consolidado por clase,23.555
+spark,00,Carga del dataset,1.498
+spark,01,Carga y validación del dataset,14.867
+spark,02,Limpieza de valores no válidos,7.979
+spark,03,Tratamiento de duplicados,8.999
+spark,04,Transformación de variables,11.261
+spark,05,Filtrado de tráfico,4.231
+spark,06,Agregaciones globales,5.12
+spark,07,Agrupaciones por clase y protocolo,2.663
+spark,08,Ordenamiento y Top-10,3.266
+spark,09,Métricas de ciberseguridad,7.742
+spark,10,Resumen consolidado por clase,4.339

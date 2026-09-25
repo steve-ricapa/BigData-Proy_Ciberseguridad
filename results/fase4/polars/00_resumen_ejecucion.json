@@ -1,0 +1,77 @@
+{
+  "motor": "polars",
+  "version": "1.44.2",
+  "dataset": "CICIoT2023_sample_600k.csv",
+  "filas_cargadas": 599987,
+  "columnas": 40,
+  "operaciones": 10,
+  "segundos_totales": 2.208,
+  "tiempos": [
+    {
+      "motor": "polars",
+      "id_operacion": "00",
+      "operacion": "Carga del dataset",
+      "segundos": 0.238
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "01",
+      "operacion": "Carga y validación del dataset",
+      "segundos": 0.247
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "02",
+      "operacion": "Limpieza de valores no válidos",
+      "segundos": 0.122
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "03",
+      "operacion": "Tratamiento de duplicados",
+      "segundos": 0.818
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "04",
+      "operacion": "Transformación de variables",
+      "segundos": 0.077
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "05",
+      "operacion": "Filtrado de tráfico",
+      "segundos": 0.05
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "06",
+      "operacion": "Agregaciones globales",
+      "segundos": 0.064
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "07",
+      "operacion": "Agrupaciones por clase y protocolo",
+      "segundos": 0.024
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "08",
+      "operacion": "Ordenamiento y Top-10",
+      "segundos": 0.043
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "09",
+      "operacion": "Métricas de ciberseguridad",
+      "segundos": 0.486
+    },
+    {
+      "motor": "polars",
+      "id_operacion": "10",
+      "operacion": "Resumen consolidado por clase",
+      "segundos": 0.039
+    }
+  ]
+}

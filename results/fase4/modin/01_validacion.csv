@@ -1,0 +1,41 @@
+columna,tipo,celdas_no_validas,pct_no_validas,distintos,minimo_valido,maximo_valido
+Header_Length,decimal,0,0.0,,0.0,60.0
+Protocol Type,entero,0,0.0,5,0,47
+Time_To_Live,decimal,0,0.0,,0.0,255.0
+Rate,decimal,13,0.002167,99172,0.000428,7340032.0
+fin_flag_number,decimal,0,0.0,110,0.0,1.0
+syn_flag_number,decimal,0,0.0,145,0.0,1.0
+rst_flag_number,decimal,0,0.0,120,0.0,1.0
+psh_flag_number,decimal,0,0.0,143,0.0,1.0
+ack_flag_number,decimal,0,0.0,188,0.0,1.0
+ece_flag_number,decimal,0,0.0,11,0.0,0.6
+cwr_flag_number,decimal,0,0.0,10,0.0,0.6
+ack_count,entero,0,0.0,,0,100
+syn_count,entero,0,0.0,,0,100
+fin_count,entero,0,0.0,,0,100
+rst_count,entero,0,0.0,,0,100
+HTTP,decimal,0,0.0,124,0.0,1.0
+HTTPS,decimal,0,0.0,152,0.0,1.0
+DNS,decimal,0,0.0,111,0.0,0.98
+Telnet,decimal,0,0.0,6,0.0,0.2
+SMTP,decimal,0,0.0,8,0.0,0.9
+SSH,decimal,0,0.0,16,0.0,1.0
+IRC,decimal,0,0.0,7,0.0,0.2
+TCP,decimal,0,0.0,184,0.0,1.0
+UDP,decimal,0,0.0,208,0.0,1.0
+DHCP,decimal,0,0.0,20,0.0,0.4
+ARP,decimal,0,0.0,114,0.0,1.0
+ICMP,decimal,0,0.0,163,0.0,1.0
+IGMP,decimal,0,0.0,8,0.0,0.2
+IPv,decimal,0,0.0,114,0.0,1.0
+LLC,decimal,0,0.0,114,0.0,1.0
+Tot sum,entero,0,0.0,,60,254697
+Min,entero,0,0.0,,42,2962
+Max,entero,0,0.0,,46,29026
+AVG,decimal,0,0.0,,46.0,4757.1
+Std,decimal,9,0.0015,,0.0,8857.321683
+Tot size,decimal,0,0.0,24149,46.0,4757.1
+IAT,decimal,0,0.0,,0.0,2334.604603
+Number,entero,0,0.0,100,1,100
+Variance,decimal,9,0.0015,53055,0.0,78452147.388889
+Label,texto,0,0.0,34,,

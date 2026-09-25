@@ -1,0 +1,5 @@
+filtro,condicion,umbral,filas_encontradas,pct_del_total
+trafico_alto,Rate >= p95 (63492.340297),63492.340297,30029,5.004942
+paquetes_grandes,Tot size >= p95 (586.680000),586.68,31235,5.205946
+trafico_intenso,Rate >= p95 (63492.340297) y Tot size >= p50 (60.000000),63492.340297,30013,5.002275
+iat_reducido,0 < IAT <= p95 (0.001070),0.00107,569989,95.000225

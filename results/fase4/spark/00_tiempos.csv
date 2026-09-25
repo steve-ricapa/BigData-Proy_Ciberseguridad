@@ -1,0 +1,12 @@
+motor,id_operacion,operacion,segundos
+spark,00,Carga del dataset,1.498
+spark,01,Carga y validación del dataset,14.867
+spark,02,Limpieza de valores no válidos,7.979
+spark,03,Tratamiento de duplicados,8.999
+spark,04,Transformación de variables,11.261
+spark,05,Filtrado de tráfico,4.231
+spark,06,Agregaciones globales,5.12
+spark,07,Agrupaciones por clase y protocolo,2.663
+spark,08,Ordenamiento y Top-10,3.266
+spark,09,Métricas de ciberseguridad,7.742
+spark,10,Resumen consolidado por clase,4.339

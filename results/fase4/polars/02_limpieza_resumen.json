@@ -1,0 +1,27 @@
+{
+  "motor": "polars",
+  "criterio": "se elimina la fila con una celda vacía, NaN o infinita",
+  "filas_antes": 600000,
+  "filas_despues": 599987,
+  "filas_eliminadas": 13,
+  "columnas_afectadas": [
+    {
+      "columna": "Rate",
+      "valores_no_validos_antes": 13,
+      "valores_no_validos_despues": 0,
+      "filas_eliminadas": 13
+    },
+    {
+      "columna": "Std",
+      "valores_no_validos_antes": 9,
+      "valores_no_validos_despues": 0,
+      "filas_eliminadas": 13
+    },
+    {
+      "columna": "Variance",
+      "valores_no_validos_antes": 9,
+      "valores_no_validos_despues": 0,
+      "filas_eliminadas": 13
+    }
+  ]
+}

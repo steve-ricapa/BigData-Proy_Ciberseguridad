@@ -1,0 +1,71 @@
+columna,metrica,valor
+Rate,conteo,599987
+Rate,suma,17108318976.259171
+Rate,media,28514.482774
+Rate,mediana,24662.221438
+Rate,minimo,0.000428
+Rate,maximo,7340032.0
+Rate,desviacion_estandar,32626.853254
+Tot size,conteo,599987
+Tot size,suma,78922573.190802
+Tot size,media,131.540472
+Tot size,mediana,60.0
+Tot size,minimo,46.0
+Tot size,maximo,4757.1
+Tot size,desviacion_estandar,228.358486
+Tot sum,conteo,599987
+Tot sum,suma,6586705988
+Tot sum,media,10978.081172
+Tot sum,mediana,6000.0
+Tot sum,minimo,120
+Tot sum,maximo,254697
+Tot sum,desviacion_estandar,16891.770989
+IAT,conteo,599987
+IAT,suma,2834.71683
+IAT,media,0.004725
+IAT,mediana,0.000041
+IAT,minimo,0.0
+IAT,maximo,2334.604603
+IAT,desviacion_estandar,3.014752
+Number,conteo,599987
+Number,suma,57290468
+Number,media,95.486182
+Number,mediana,100.0
+Number,minimo,2
+Number,maximo,100
+Number,desviacion_estandar,19.604861
+Variance,conteo,599987
+Variance,suma,20231013790.268341
+Variance,media,33719.086897
+Variance,mediana,0.0
+Variance,minimo,0.0
+Variance,maximo,78452147.388889
+Variance,desviacion_estandar,389346.305025
+AVG,conteo,599987
+AVG,suma,78922573.190802
+AVG,media,131.540472
+AVG,mediana,60.0
+AVG,minimo,46.0
+AVG,maximo,4757.1
+AVG,desviacion_estandar,228.358486
+Std,conteo,599987
+Std,suma,24740243.130839
+Std,media,41.234632
+Std,mediana,0.0
+Std,minimo,0.0
+Std,maximo,8857.321683
+Std,desviacion_estandar,178.938105
+Min,conteo,599987
+Min,suma,48023414
+Min,media,80.040758
+Min,mediana,60.0
+Min,minimo,42
+Min,maximo,2922
+Min,desviacion_estandar,106.945747
+Max,conteo,599987
+Max,suma,134045205
+Max,media,223.413516
+Max,mediana,60.0
+Max,minimo,46
+Max,maximo,29026
+Max,desviacion_estandar,579.416236
