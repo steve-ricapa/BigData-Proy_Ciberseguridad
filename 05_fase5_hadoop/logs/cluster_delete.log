@@ -1,0 +1,13 @@
+python.exe : Waiting on operation 
+[projects/bigdata-proyecto1-ciciot2023/regions/us-central1/operations/553bdfd9-8a90-3f3c-8c9b-ba75378d55ab].
+En C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.ps1: 114 Carácter: 3
++   & "$cloudsdk_python" $run_args_array
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Waiting on oper...-ba75378d55ab].:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for cluster deletion operation...
+.......................................................................................................................
+...............................................done.
+Deleted 
+[https://dataproc.googleapis.com/v1/projects/bigdata-proyecto1-ciciot2023/regions/us-central1/clusters/ciciot-fase5].

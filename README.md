@@ -12,7 +12,7 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 - **Región del bucket:** `US-CENTRAL1`
 - **Muestra local:** 600,000 registros y 40 columnas.
 - **Dataset original local:** 309 CSV, 34 clases y 46,776,700 registros.
-- **Dataproc:** clúster temporal para Fase 5; resultados y configuración preservados en `results/fase5/` y `05_fase5_hadoop/`.
+- **Dataproc:** el clúster temporal de Fase 5 se eliminó tras guardar las evidencias; resultados y configuración permanecen en `results/fase5/` y `05_fase5_hadoop/`.
 - **GKE:** no habilitado.
 
 ## Estructura local

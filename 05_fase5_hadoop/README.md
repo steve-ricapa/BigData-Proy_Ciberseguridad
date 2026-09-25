@@ -32,6 +32,11 @@ YARN figuran como `FINISHED` en `logs/job_*.json` y `logs/job_*.log`.
 - Logs, configuración del clúster, metadatos de cada job y exploración HDFS:
   `logs/` local y `gs://.../results/fase5/evidencias/logs/`.
 
+**Estado final:** el clúster se eliminó después de verificar las copias en
+GCS y GitHub (`1598f56`); `logs/cluster_delete.log` conserva la respuesta
+de Dataproc y `logs/cluster_deleted_verified.txt` documenta que ya no
+figura en la lista de clústeres de `us-central1`.
+
 ## Reproducir (PowerShell en la raíz del repositorio)
 
 Se necesitan `gcloud`, una cuenta con permisos para Dataproc y un principal

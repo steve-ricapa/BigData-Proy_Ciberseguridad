@@ -40,6 +40,14 @@ un master y dos workers `e2-standard-2`. La configuración real está en
 por lo que los comandos HDFS se ejecutaron mediante un job auxiliar de
 Dataproc, distinto de los tres programas MapReduce evaluados.
 
+Antes de eliminar el clúster se comprobó que **los diez archivos HDFS**
+estaban en GCS y en el repositorio, con tamaños coincidentes y manifiesto
+SHA-256; también se comprobaron en ambos sitios los logs, los metadatos JSON
+de los tres jobs y la configuración. El commit `1598f56` se publicó antes del
+borrado. La eliminación consta en `logs/cluster_delete.log` y un listado
+posterior devolvió **cero clústeres** en la región (véase
+`logs/cluster_deleted_verified.txt`).
+
 La API Dataproc estaba deshabilitada y la cuenta de servicio carecía al
 principio de `roles/dataproc.worker`: se guardaron los intentos fallidos
 en `logs/` para trazabilidad; no se crearon VMs en esos intentos.

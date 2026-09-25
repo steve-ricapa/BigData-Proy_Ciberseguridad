@@ -1,0 +1,6 @@
+Verificación posterior al borrado: 2026-09-25T15:38:06.1864114-05:00
+Proyecto: bigdata-proyecto1-ciciot2023
+Región: us-central1
+Clústeres listados: 0
+Nombres: 
+
