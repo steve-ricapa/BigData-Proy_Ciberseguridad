@@ -1,0 +1,8 @@
+Validaci?n UTC: 2026-09-25T21:31:58.445124+00:00
+Comando: C:\Users\steve\Desktop\Big_Data\ProyectoBigData_CICIoT2023\.venv\Scripts\python.exe -X utf8 06_fase6_procesamiento\validar_resultados.py
+Exit: 0
+polars: 10 CSV + tiempos + 12 celdas ejecutadas; coincide con Polars
+dask: 10 CSV + tiempos + 12 celdas ejecutadas; coincide con Polars
+modin: 10 CSV + tiempos + 12 celdas ejecutadas; coincide con Polars
+spark: 10 CSV + tiempos + 12 celdas ejecutadas; coincide con Polars
+OK: 4 notebooks; 40 consultas equivalentes; 44 CSV; 40 tiempos

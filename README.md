@@ -4,8 +4,8 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 
 ## Estado actual
 
-- **Fases completadas:** Fase 1 — Dataset; Fase 2 — Configuración de GCP; Fase 3 — Diseño de arquitectura; Fase 4 — Procesamiento con cuatro motores; Fase 5 — Hadoop/MapReduce en Dataproc.
-- **Siguiente fase:** Fase 6 — Análisis de indicadores.
+- **Fases completadas:** Fase 1 — Dataset; Fase 2 — Configuración de GCP; Fase 3 — Diseño de arquitectura; Fase 4 — Procesamiento con cuatro motores; Fase 5 — Hadoop/MapReduce en Dataproc; Fase 6 — Procesamiento distribuido con diez consultas equivalentes por motor.
+- **Siguiente fase:** Análisis de indicadores y preguntas finales de ciberseguridad.
 - **Documento de arquitectura:** `03_fase3_arquitectura/documentacion/arquitectura_big_data.md`
 - **Proyecto GCP:** `bigdata-proyecto1-ciciot2023`
 - **Bucket:** `gs://ciciot2023-bigdata-utec-proyecto1-gm/`
@@ -33,6 +33,7 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 03_fase3_arquitectura/
 04_fase4_procesamiento/ # 4 notebooks, contrato común y validador
 05_fase5_hadoop/
+06_fase6_procesamiento/ # 4 notebooks ejecutados, 40 consultas, validador
 06_fase6_analisis/
 07_fase7_entregables/
 results/fase4/        # 40 consultas, CSV/JSON y tiempos por motor
@@ -69,6 +70,12 @@ Un clúster efímero con HDFS y tres programas del JAR de ejemplos de Hadoop:
 `secondarysort`, `terasort` y `pi`. Instrucciones reproducibles, salidas,
 verificación y evidencias en `05_fase5_hadoop/README.md` y
 `reports/fase5_resumen.md`.
+
+## Fase 6 — Procesamiento distribuido
+
+Cuatro notebooks (Polars, Dask, Modin y Spark local), diez consultas idénticas
+por motor sobre la muestra intacta. Resultados, tiempos y validación cruzada en
+`06_fase6_procesamiento/README.md` y `06_fase6_procesamiento/results/`.
 
 ## Estructura prevista en Cloud Storage
 

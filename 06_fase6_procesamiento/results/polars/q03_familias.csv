@@ -1,0 +1,9 @@
+Attack_Family,cantidad,clases
+Benign,14087,1
+BruteForce,169,1
+DDoS,435902,12
+DoS,100627,4
+Mirai,33788,3
+Recon,8862,5
+Spoofing,6242,2
+Web-based,323,6
