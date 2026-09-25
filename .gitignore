@@ -1,0 +1,33 @@
+# Dataset original CIC-IoT-2023: no versionar (aprox. 8.3 GiB).
+01_fase1_datos/raw/
+
+# Metadatos locales de OpenCode; no son entregables del proyecto.
+.agents/
+.opencode/
+skills-lock.json
+
+# Python.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Archivos temporales de validación y procesamiento.
+*.partial
+*.tmp
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Secretos y archivos locales.
+.env
+.env.*
+credentials.db
+access_tokens.db
+application_default_credentials.json
+
+# Editores y sistema operativo.
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

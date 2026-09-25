@@ -1,0 +1,402 @@
+{
+  "generated_at_utc": "2026-09-25T14:55:36.414676+00:00",
+  "source": {
+    "root_name": "CIC-IoT-2023",
+    "csv_files": 309,
+    "classes": 34,
+    "source_size_bytes": 8943771319,
+    "source_size_gib": 8.329536,
+    "total_rows": 46776700,
+    "label_derivation": "Parent directory; Benign_Final is normalized to Benign. All other directory names are preserved."
+  },
+  "sample": {
+    "output_file": "C:\\Users\\steve\\Desktop\\Big_Data\\ProyectoBigData_CICIoT2023\\01_fase1_datos\\muestra\\CICIoT2023_sample_600k.csv",
+    "rows": 600000,
+    "data_rows_excluding_header": 600000,
+    "columns": 40,
+    "column_names": [
+      "Header_Length",
+      "Protocol Type",
+      "Time_To_Live",
+      "Rate",
+      "fin_flag_number",
+      "syn_flag_number",
+      "rst_flag_number",
+      "psh_flag_number",
+      "ack_flag_number",
+      "ece_flag_number",
+      "cwr_flag_number",
+      "ack_count",
+      "syn_count",
+      "fin_count",
+      "rst_count",
+      "HTTP",
+      "HTTPS",
+      "DNS",
+      "Telnet",
+      "SMTP",
+      "SSH",
+      "IRC",
+      "TCP",
+      "UDP",
+      "DHCP",
+      "ARP",
+      "ICMP",
+      "IGMP",
+      "IPv",
+      "LLC",
+      "Tot sum",
+      "Min",
+      "Max",
+      "AVG",
+      "Std",
+      "Tot size",
+      "IAT",
+      "Number",
+      "Variance",
+      "Label"
+    ],
+    "file_size_bytes": 124498206,
+    "file_size_mib": 118.731,
+    "file_size_gib": 0.115948,
+    "estimated_pandas_memory_bytes": 230572326,
+    "original_feature_values_preserved": true,
+    "header_included": true
+  },
+  "quality": {
+    "duplicate_rows_full_record": 131030,
+    "unique_rows": 468970,
+    "null_cells": 18,
+    "null_by_column": {
+      "Header_Length": 0,
+      "Protocol Type": 0,
+      "Time_To_Live": 0,
+      "Rate": 0,
+      "fin_flag_number": 0,
+      "syn_flag_number": 0,
+      "rst_flag_number": 0,
+      "psh_flag_number": 0,
+      "ack_flag_number": 0,
+      "ece_flag_number": 0,
+      "cwr_flag_number": 0,
+      "ack_count": 0,
+      "syn_count": 0,
+      "fin_count": 0,
+      "rst_count": 0,
+      "HTTP": 0,
+      "HTTPS": 0,
+      "DNS": 0,
+      "Telnet": 0,
+      "SMTP": 0,
+      "SSH": 0,
+      "IRC": 0,
+      "TCP": 0,
+      "UDP": 0,
+      "DHCP": 0,
+      "ARP": 0,
+      "ICMP": 0,
+      "IGMP": 0,
+      "IPv": 0,
+      "LLC": 0,
+      "Tot sum": 0,
+      "Min": 0,
+      "Max": 0,
+      "AVG": 0,
+      "Std": 9,
+      "Tot size": 0,
+      "IAT": 0,
+      "Number": 0,
+      "Variance": 9,
+      "Label": 0
+    },
+    "rows_with_at_least_one_null": 9
+  },
+  "class_distribution": [
+    {
+      "label": "Backdoor_Malware",
+      "original_count": 3218,
+      "original_percentage": 0.006879,
+      "sample_count": 42,
+      "sample_percentage": 0.007,
+      "difference_percentage_points": 0.000121
+    },
+    {
+      "label": "Benign",
+      "original_count": 1098191,
+      "original_percentage": 2.347731,
+      "sample_count": 14087,
+      "sample_percentage": 2.347833,
+      "difference_percentage_points": 0.000103
+    },
+    {
+      "label": "BrowserHijacking",
+      "original_count": 5859,
+      "original_percentage": 0.012525,
+      "sample_count": 76,
+      "sample_percentage": 0.012667,
+      "difference_percentage_points": 0.000141
+    },
+    {
+      "label": "CommandInjection",
+      "original_count": 5409,
+      "original_percentage": 0.011563,
+      "sample_count": 70,
+      "sample_percentage": 0.011667,
+      "difference_percentage_points": 0.000103
+    },
+    {
+      "label": "DDoS-ACK_Fragmentation",
+      "original_count": 285075,
+      "original_percentage": 0.609438,
+      "sample_count": 3657,
+      "sample_percentage": 0.6095,
+      "difference_percentage_points": 6.2e-05
+    },
+    {
+      "label": "DDoS-HTTP_Flood",
+      "original_count": 28790,
+      "original_percentage": 0.061548,
+      "sample_count": 370,
+      "sample_percentage": 0.061667,
+      "difference_percentage_points": 0.000119
+    },
+    {
+      "label": "DDoS-ICMP_Flood",
+      "original_count": 7200501,
+      "original_percentage": 15.39335,
+      "sample_count": 92356,
+      "sample_percentage": 15.392667,
+      "difference_percentage_points": -0.000683
+    },
+    {
+      "label": "DDoS-ICMP_Fragmentation",
+      "original_count": 452490,
+      "original_percentage": 0.967341,
+      "sample_count": 5805,
+      "sample_percentage": 0.9675,
+      "difference_percentage_points": 0.000159
+    },
+    {
+      "label": "DDoS-PSHACK_FLOOD",
+      "original_count": 4094772,
+      "original_percentage": 8.753871,
+      "sample_count": 52521,
+      "sample_percentage": 8.7535,
+      "difference_percentage_points": -0.000371
+    },
+    {
+      "label": "DDoS-RSTFINFLOOD",
+      "original_count": 4045279,
+      "original_percentage": 8.648064,
+      "sample_count": 51887,
+      "sample_percentage": 8.647833,
+      "difference_percentage_points": -0.000231
+    },
+    {
+      "label": "DDoS-SlowLoris",
+      "original_count": 23426,
+      "original_percentage": 0.05008,
+      "sample_count": 301,
+      "sample_percentage": 0.050167,
+      "difference_percentage_points": 8.6e-05
+    },
+    {
+      "label": "DDoS-SYN_Flood",
+      "original_count": 4059179,
+      "original_percentage": 8.67778,
+      "sample_count": 52065,
+      "sample_percentage": 8.6775,
+      "difference_percentage_points": -0.00028
+    },
+    {
+      "label": "DDoS-SynonymousIP_Flood",
+      "original_count": 3598133,
+      "original_percentage": 7.692148,
+      "sample_count": 46151,
+      "sample_percentage": 7.691833,
+      "difference_percentage_points": -0.000315
+    },
+    {
+      "label": "DDoS-TCP_Flood",
+      "original_count": 4497649,
+      "original_percentage": 9.615148,
+      "sample_count": 57689,
+      "sample_percentage": 9.614833,
+      "difference_percentage_points": -0.000315
+    },
+    {
+      "label": "DDoS-UDP_Flood",
+      "original_count": 5412231,
+      "original_percentage": 11.570357,
+      "sample_count": 69419,
+      "sample_percentage": 11.569833,
+      "difference_percentage_points": -0.000523
+    },
+    {
+      "label": "DDoS-UDP_Fragmentation",
+      "original_count": 286925,
+      "original_percentage": 0.613393,
+      "sample_count": 3681,
+      "sample_percentage": 0.6135,
+      "difference_percentage_points": 0.000107
+    },
+    {
+      "label": "DictionaryBruteForce",
+      "original_count": 13064,
+      "original_percentage": 0.027928,
+      "sample_count": 169,
+      "sample_percentage": 0.028167,
+      "difference_percentage_points": 0.000238
+    },
+    {
+      "label": "DNS_Spoofing",
+      "original_count": 178898,
+      "original_percentage": 0.382451,
+      "sample_count": 2296,
+      "sample_percentage": 0.382667,
+      "difference_percentage_points": 0.000216
+    },
+    {
+      "label": "DoS-HTTP_Flood",
+      "original_count": 71861,
+      "original_percentage": 0.153626,
+      "sample_count": 923,
+      "sample_percentage": 0.153833,
+      "difference_percentage_points": 0.000208
+    },
+    {
+      "label": "DoS-SYN_Flood",
+      "original_count": 2028836,
+      "original_percentage": 4.337279,
+      "sample_count": 26023,
+      "sample_percentage": 4.337167,
+      "difference_percentage_points": -0.000112
+    },
+    {
+      "label": "DoS-TCP_Flood",
+      "original_count": 2671430,
+      "original_percentage": 5.711027,
+      "sample_count": 34265,
+      "sample_percentage": 5.710833,
+      "difference_percentage_points": -0.000194
+    },
+    {
+      "label": "DoS-UDP_Flood",
+      "original_count": 3072993,
+      "original_percentage": 6.569495,
+      "sample_count": 39416,
+      "sample_percentage": 6.569333,
+      "difference_percentage_points": -0.000162
+    },
+    {
+      "label": "Mirai-greeth_flood",
+      "original_count": 991834,
+      "original_percentage": 2.120359,
+      "sample_count": 12722,
+      "sample_percentage": 2.120333,
+      "difference_percentage_points": -2.6e-05
+    },
+    {
+      "label": "Mirai-greip_flood",
+      "original_count": 751646,
+      "original_percentage": 1.606881,
+      "sample_count": 9642,
+      "sample_percentage": 1.607,
+      "difference_percentage_points": 0.000119
+    },
+    {
+      "label": "Mirai-udpplain",
+      "original_count": 890574,
+      "original_percentage": 1.903884,
+      "sample_count": 11424,
+      "sample_percentage": 1.904,
+      "difference_percentage_points": 0.000116
+    },
+    {
+      "label": "MITM-ArpSpoofing",
+      "original_count": 307560,
+      "original_percentage": 0.657507,
+      "sample_count": 3946,
+      "sample_percentage": 0.657667,
+      "difference_percentage_points": 0.00016
+    },
+    {
+      "label": "Recon-HostDiscovery",
+      "original_count": 134378,
+      "original_percentage": 0.287276,
+      "sample_count": 1725,
+      "sample_percentage": 0.2875,
+      "difference_percentage_points": 0.000224
+    },
+    {
+      "label": "Recon-OSScan",
+      "original_count": 98259,
+      "original_percentage": 0.21006,
+      "sample_count": 1261,
+      "sample_percentage": 0.210167,
+      "difference_percentage_points": 0.000107
+    },
+    {
+      "label": "Recon-PingSweep",
+      "original_count": 2262,
+      "original_percentage": 0.004836,
+      "sample_count": 30,
+      "sample_percentage": 0.005,
+      "difference_percentage_points": 0.000164
+    },
+    {
+      "label": "Recon-PortScan",
+      "original_count": 82284,
+      "original_percentage": 0.175908,
+      "sample_count": 1056,
+      "sample_percentage": 0.176,
+      "difference_percentage_points": 9.2e-05
+    },
+    {
+      "label": "SqlInjection",
+      "original_count": 5245,
+      "original_percentage": 0.011213,
+      "sample_count": 68,
+      "sample_percentage": 0.011333,
+      "difference_percentage_points": 0.00012
+    },
+    {
+      "label": "Uploading_Attack",
+      "original_count": 1252,
+      "original_percentage": 0.002677,
+      "sample_count": 17,
+      "sample_percentage": 0.002833,
+      "difference_percentage_points": 0.000157
+    },
+    {
+      "label": "VulnerabilityScan",
+      "original_count": 373351,
+      "original_percentage": 0.798156,
+      "sample_count": 4790,
+      "sample_percentage": 0.798333,
+      "difference_percentage_points": 0.000177
+    },
+    {
+      "label": "XSS",
+      "original_count": 3846,
+      "original_percentage": 0.008222,
+      "sample_count": 50,
+      "sample_percentage": 0.008333,
+      "difference_percentage_points": 0.000111
+    }
+  ],
+  "sampling": {
+    "method": "Two-pass streaming sample. One row is reserved for every class; the remaining rows are allocated proportionally with capped largest-remainder rounding. Quotas are then allocated among files and exact random row positions are selected without replacement.",
+    "random_state": 42,
+    "minimum_rows_per_class": 1,
+    "all_classes_preserved": true,
+    "total_rows_exact": true,
+    "lines_per_block": 100000
+  },
+  "performance": {
+    "count_and_inventory_seconds": 16.217,
+    "sampling_and_write_seconds": 11.198,
+    "validation_seconds": 13.313,
+    "full_dataset_loaded_in_memory": false
+  }
+}
