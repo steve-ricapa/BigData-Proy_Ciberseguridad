@@ -22,6 +22,12 @@ Incluye:
 
 No incluye la implementación de un clúster Dataproc, HDFS ni programas MapReduce. Esas actividades se implementarán en las fases posteriores.
 
+**Nota de ejecución posterior:** este documento describe el diseño y el estado
+al cerrar la Fase 3. La Fase 4 ejecutó Spark localmente. Dataproc y HDFS se
+implementaron después, en la Fase 5; véase `05_fase5_hadoop/README.md`.
+La estructura real de resultados es `results/fase4/<motor>/` y
+`results/fase5/mapreduce/`, no los prefijos planos propuestos aquí.
+
 Las operaciones de Spark de la Fase 4 podrán ejecutarse inicialmente en un entorno local o de laboratorio. El mismo código queda preparado para ejecutarse sobre Dataproc en la Fase 5.
 
 ## 3. Arquitectura propuesta

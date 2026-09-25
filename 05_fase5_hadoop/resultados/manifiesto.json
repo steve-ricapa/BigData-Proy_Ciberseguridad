@@ -1,0 +1,57 @@
+{
+  "registros_secondarysort": 599987,
+  "registros_terasort": 599987,
+  "pi": 3.1414,
+  "archivos": [
+    {
+      "ruta": "results/fase5/mapreduce/pi/resultado.txt",
+      "bytes": 158,
+      "sha256": "694b6ebbdbb02c209909c19bae2e993a4be09b451abb9068480e53bab094e573"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/secondarysort/_SUCCESS",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/secondarysort/part-r-00000",
+      "bytes": 2720243,
+      "sha256": "86781cb2aea92a286ef47ef5082ac4582975d2e6a676ad392f50fb4c506acd6d"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/secondarysort/part-r-00001",
+      "bytes": 774525,
+      "sha256": "ece046a3f724c73996d877cdf2100fa2bdfe55ae43fb8dbe21409626824603c2"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/secondarysort/part-r-00002",
+      "bytes": 1295495,
+      "sha256": "4d7b243c418e9c4377774bd79c9273a70136673eca1678b1f7186ff550237d62"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/terasort/_partition.lst",
+      "bytes": 22,
+      "sha256": "24e1251f0450cfab6c666110c1f153a4480c9a1d7a2d209505428dddaefa795b"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/terasort/_SUCCESS",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/terasort/part-r-00000",
+      "bytes": 19911200,
+      "sha256": "94ac9bbb5a36e77005bef9902b52b6e433c3d7c971adb884aeba221819f91d89"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/terasort/part-r-00001",
+      "bytes": 19140100,
+      "sha256": "2033e63f617ef2fffe44f1be2671cb6f482e5f460c260c56ba5de668202269e5"
+    },
+    {
+      "ruta": "results/fase5/mapreduce/terasort/part-r-00002",
+      "bytes": 20947400,
+      "sha256": "10cfe2d239098760091053ff4ba5036c9bb75662e64f774de15c055d141ca4d2"
+    }
+  ]
+}

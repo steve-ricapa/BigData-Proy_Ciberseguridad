@@ -1,0 +1,263 @@
+gcloud.cmd : Job [eeaaae4c99f445e0b7d9efa658269582] submitted.
+En línea: 1 Carácter: 55
++ ... ig\gcloud'; gcloud.cmd dataproc jobs submit pyspark 'gs://ciciot2023- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Job [eeaaae4c99...582] submitted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for job output...
+HOST= ciciot-fase5-m JAR= ['/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar', 
+'/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-3.3.6.jar']
+$ hadoop version
+Hadoop 3.3.6
+Source code repository https://bigdataoss-internal.googlesource.com/third_party/apache/hadoop -r 
+8424d9552b6a186a1e0adc439510b10505b5714b
+Compiled by bigtop on 2026-08-30T07:36Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.7.1
+From source with checksum afca53245f7160b91433a087d476293f
+This command was run using /usr/lib/hadoop/hadoop-common-3.3.6.jar
+$ hadoop fs -ls -R /fase5
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:14 /fase5/entrada
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:14 /fase5/entrada/csv
+-rw-r--r--   2 root hadoop  124498206 2026-09-25 20:14 /fase5/entrada/csv/CICIoT2023_sample_600k.csv
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:15 /fase5/entrada/secondarysort
+-rw-r--r--   2 root hadoop    4790018 2026-09-25 20:15 /fase5/entrada/secondarysort/secondarysort.txt
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:15 /fase5/entrada/terasort
+-rw-r--r--   2 root hadoop   59998700 2026-09-25 20:15 /fase5/entrada/terasort/terasort.bin
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:21 /fase5/salidas
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:22 /fase5/salidas/pi
+-rw-r--r--   2 root hadoop        158 2026-09-25 20:22 /fase5/salidas/pi/resultado.txt
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:17 /fase5/salidas/secondarysort
+-rw-r--r--   2 root hadoop          0 2026-09-25 20:17 /fase5/salidas/secondarysort/_SUCCESS
+-rw-r--r--   2 root hadoop    2720243 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00000
+-rw-r--r--   2 root hadoop     774525 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00001
+-rw-r--r--   2 root hadoop    1295495 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00002
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:18 /fase5/salidas/terasort
+-rw-r--r--   1 root hadoop          0 2026-09-25 20:18 /fase5/salidas/terasort/_SUCCESS
+-rw-r--r--  10 root hadoop         22 2026-09-25 20:17 /fase5/salidas/terasort/_partition.lst
+-rw-r--r--   1 root hadoop   19911200 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00000
+-rw-r--r--   1 root hadoop   19140100 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00001
+-rw-r--r--   1 root hadoop   20947400 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00002
+$ hadoop fs -du -h /fase5/salidas
+158     316     /fase5/salidas/pi
+4.6 M   9.1 M   /fase5/salidas/secondarysort
+57.2 M  57.2 M  /fase5/salidas/terasort
+$ hadoop fs -head /fase5/salidas/secondarysort/part-r-00000
+------------------------------------------------
+0	7
+0	11
+0	11
+0	14
+0	14
+0	15
+0	16
+0	16
+0	16
+0	17
+0	17
+0	18
+0	18
+0	18
+0	18
+0	20
+0	20
+0	20
+0	20
+0	21
+0	21
+0	21
+0	21
+0	22
+0	22
+0	22
+0	23
+0	23
+0	24
+0	25
+0	25
+0	25
+0	26
+0	26
+0	26
+0	26
+0	26
+0	27
+0	27
+0	27
+0	28
+0	28
+0	28
+0	28
+0	28
+0	28
+0	28
+0	28
+0	28
+0	28
+0	29
+0	30
+0	31
+0	31
+0	31
+0	31
+0	31
+0	31
+0	31
+0	32
+0	32
+0	33
+0	34
+0	34
+0	34
+0	35
+0	36
+0	38
+0	38
+0	39
+0	40
+0	41
+0	41
+0	41
+0	43
+0	43
+0	43
+0	44
+0	45
+0	45
+0	47
+0	47
+0	47
+0	47
+0	47
+0	48
+0	48
+0	50
+0	50
+0	50
+0	50
+0	51
+0	51
+0	51
+0	51
+0	53
+0	53
+0	54
+0	54
+0	54
+0	56
+0	57
+0	58
+0	59
+0	62
+0	62
+0	62
+0	64
+0	64
+0	65
+0	66
+0	66
+0	67
+0	67
+0	68
+0	68
+0	69
+0	72
+0	73
+0	73
+0	78
+0	81
+0	83
+0	84
+0	87
+0	88
+0	95
+0	104
+0	108
+0	112
+0	115
+0	116
+0	117
+0	118
+0	123
+0	127
+0	128
+0	129
+0	131
+0	133
+0	134
+0	136
+0	137
+0	137
+0	140
+0	143
+0	146
+0	149
+0	151
+0	153
+0	153
+0	155
+0	167
+0	170
+0	170
+0	181
+0	181
+0	181
+0	185
+0	185
+0	189
+0	191
+0	198
+0	202
+0	203
+0	205
+0	207
+0	208
+0	229
+0	232
+0	240
+0	241
+0	244
+0	244
+0	250
+0	258
+0	263
+0	264
+0	273
+0	282
+0	292
+0	304
+0	305
+0	312$ hadoop fs -head /fase5/salidas/pi/resultado.txt
+programa=pi (QuasiMonteCarlo)
+maps=4
+muestras_por_map=10000
+muestras_totales=40000
+pi_estimada=3.14140000000000000000
+job_id=26894b416c8940e1aaaefd44428c1d80
+Job [eeaaae4c99f445e0b7d9efa658269582] finished successfully.
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/eeaaae4c99f445e0b7d9efa658269582/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/eeaaae4c99f445e0b7d9efa658269582/driveroutput
+jobUuid: 3242977a-1146-3b68-b5bf-e8d5c98c7dd4
+placement:
+  clusterName: ciciot-fase5
+  clusterUuid: 89790f33-75ce-40f5-aa71-d79c8c726e33
+pysparkJob:
+  args:
+  - inspeccionar
+  mainPythonFileUri: gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/hdfs_admin.py
+reference:
+  jobId: eeaaae4c99f445e0b7d9efa658269582
+  projectId: bigdata-proyecto1-ciciot2023
+status:
+  state: DONE
+  stateStartTime: '2026-09-25T20:23:05.460814Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2026-09-25T20:22:31.289684Z'
+- state: SETUP_DONE
+  stateStartTime: '2026-09-25T20:22:31.405326Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2026-09-25T20:22:31.918579Z'

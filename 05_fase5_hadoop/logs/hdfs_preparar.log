@@ -1,0 +1,221 @@
+gcloud.cmd : Job [1fbc687cb6704db6afa63986a9f10d8e] submitted.
+En línea: 1 Carácter: 55
++ ... ig\gcloud'; gcloud.cmd dataproc jobs submit pyspark 'gs://ciciot2023- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Job [1fbc687cb6...d8e] submitted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for job output...
+HOST= ciciot-fase5-m JAR= ['/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar', 
+'/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-3.3.6.jar']
+$ hadoop version
+Hadoop 3.3.6
+Source code repository https://bigdataoss-internal.googlesource.com/third_party/apache/hadoop -r 
+8424d9552b6a186a1e0adc439510b10505b5714b
+Compiled by bigtop on 2026-08-30T07:36Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.7.1
+From source with checksum afca53245f7160b91433a087d476293f
+This command was run using /usr/lib/hadoop/hadoop-common-3.3.6.jar
+$ hadoop fs -mkdir -p /fase5/entrada/csv
+$ hadoop fs -mkdir -p /fase5/entrada/secondarysort
+$ hadoop fs -mkdir -p /fase5/entrada/terasort
+$ hadoop fs -mkdir -p /fase5/salidas
+$ hadoop fs -cp gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/CICIoT2023_sample_600k.csv /fase5/entrada/csv/
+2026-09-25 20:14:52,648 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:14:52,888 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:14:52,888 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:14:54 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/1dc1f0ac]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o/processed%2FCICIoT2023_sample_600k.csv?fields=bucket,name,timeCreated,updated,generatio
+n,metageneration,size,contentType,contentEncoding,md5Hash,crc32c,metadata; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/1dc1f0ac]. durationMs=378; method=GET; thread=main [CONTEXT ratelimit_period="10 
+SECONDS" ]
+$ hadoop fs -cp gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/secondarysort.txt 
+/fase5/entrada/secondarysort/
+2026-09-25 20:15:03,980 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:15:04,212 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:15:04,212 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:15:05 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/6d04febc]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=processed/fase5/secondarysort.txt/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/6d04febc]. durationMs=308; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/terasort.bin /fase5/entrada/terasort/
+2026-09-25 20:15:12,875 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:15:13,104 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:15:13,104 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:15:14 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/b11b5ee0]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=processed/fase5/terasort.bin/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/b11b5ee0]. durationMs=308; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -ls -R /fase5/entrada
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:14 /fase5/entrada/csv
+-rw-r--r--   2 root hadoop  124498206 2026-09-25 20:14 /fase5/entrada/csv/CICIoT2023_sample_600k.csv
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:15 /fase5/entrada/secondarysort
+-rw-r--r--   2 root hadoop    4790018 2026-09-25 20:15 /fase5/entrada/secondarysort/secondarysort.txt
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:15 /fase5/entrada/terasort
+-rw-r--r--   2 root hadoop   59998700 2026-09-25 20:15 /fase5/entrada/terasort/terasort.bin
+$ hadoop fs -du -h /fase5/entrada
+118.7 M  237.5 M  /fase5/entrada/csv
+4.6 M    9.1 M    /fase5/entrada/secondarysort
+57.2 M   114.4 M  /fase5/entrada/terasort
+$ hadoop fs -head /fase5/entrada/secondarysort/secondarysort.txt
+47 2110
+47 5565
+47 1790
+47 2923
+47 600
+47 4067
+47 8901
+47 4164
+47 5180
+47 5205
+47 10183
+47 2710
+47 10355
+47 8266
+47 6010
+47 3124
+47 8833
+47 7606
+47 7370
+47 4033
+47 1987
+47 2735
+47 6912
+47 11190
+47 6108
+47 3222
+47 4544
+47 13198
+47 4687
+47 5256
+47 5742
+47 11724
+47 3873
+47 12511
+47 5323
+47 7611
+47 2246
+47 4371
+47 5759
+47 5547
+47 6129
+47 2799
+47 5284
+47 5419
+47 5171
+47 13757
+47 13693
+47 7996
+47 3526
+47 2505
+47 2274
+47 6260
+47 1347
+47 2384
+47 4387
+47 2350
+47 6700
+47 8786
+47 2395
+47 6012
+47 5780
+47 5980
+47 5657
+47 2524
+47 1262
+47 3055
+47 1096
+47 4609
+47 9595
+47 12712
+47 3438
+47 2939
+47 5214
+47 6741
+47 7824
+47 7789
+47 7573
+47 2170
+47 3789
+47 8552
+47 1684
+47 638
+47 3873
+47 6845
+47 5286
+47 703
+47 6726
+47 3371
+47 689
+47 597
+47 1176
+47 6885
+47 5847
+47 11304
+47 5775
+47 5819
+47 1671
+47 5166
+47 3450
+47 728
+47 2790
+47 2753
+47 6665
+47 3244
+47 5728
+47 3724
+47 12277
+47 7793
+47 3596
+47 9755
+47 11285
+47 8738
+47 8212
+47 4385
+47 5592
+47 9793
+47 6384
+47 11612
+47 4979
+47 2706
+47 9806
+47 4484
+47 1405
+47 455
+47 407
+47 12083
+47 4717
+47Job [1fbc687cb6704db6afa63986a9f10d8e] finished successfully.
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1fbc687cb6704db6afa63986a9f10d8e/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1fbc687cb6704db6afa63986a9f10d8e/driveroutput
+jobUuid: e2771af7-80a5-3b0d-8e47-9b509071f98a
+placement:
+  clusterName: ciciot-fase5
+  clusterUuid: 89790f33-75ce-40f5-aa71-d79c8c726e33
+pysparkJob:
+  args:
+  - preparar
+  mainPythonFileUri: gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/hdfs_admin.py
+reference:
+  jobId: 1fbc687cb6704db6afa63986a9f10d8e
+  projectId: bigdata-proyecto1-ciciot2023
+status:
+  state: DONE
+  stateStartTime: '2026-09-25T20:15:35.595189Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2026-09-25T20:14:11.536587Z'
+- state: SETUP_DONE
+  stateStartTime: '2026-09-25T20:14:11.650885Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2026-09-25T20:14:12.237611Z'

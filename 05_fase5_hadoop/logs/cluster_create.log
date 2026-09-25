@@ -1,0 +1,12 @@
+python.exe : ERROR: (gcloud.dataproc.clusters.create) INVALID_ARGUMENT: Default Service Account 
+'698285774089-compute@developer.gserviceaccount.com' is missing required permissions: [dataproc.agents.create, 
+dataproc.agents.delete, dataproc.agents.get, dataproc.agents.update, dataproc.tasks.lease, 
+dataproc.tasks.listInvalidatedLeases, dataproc.tasks.reportStatus]. Service Accounts must have either 
+'Dataproc/Dataproc Worker' role or all permissions granted by the role. See 
+https://cloud.google.com/dataproc/docs/concepts/iam for further details.
+En C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.ps1: 114 Carácter: 3
++   & "$cloudsdk_python" $run_args_array
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: (gcloud....urther details.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,10 @@
+python.exe : ERROR: (gcloud.projects.add-iam-policy-binding) [steve.ricapa@gmail.com] does not have permission to 
+access projects instance [bigdata-proyecto1-ciciot2023:setIamPolicy] (or it may not exist): Policy update access 
+denied. This command is authenticated as steve.ricapa@gmail.com which is the active account specified by the 
+[core/account] property.
+En C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.ps1: 114 Carácter: 3
++   & "$cloudsdk_python" $run_args_array
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: (gcloud....ount] property.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

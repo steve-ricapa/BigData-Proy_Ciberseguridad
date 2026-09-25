@@ -1,0 +1,6 @@
+programa=pi (QuasiMonteCarlo)
+maps=4
+muestras_por_map=10000
+muestras_totales=40000
+pi_estimada=3.14140000000000000000
+job_id=26894b416c8940e1aaaefd44428c1d80

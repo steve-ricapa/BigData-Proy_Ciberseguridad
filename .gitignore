@@ -8,6 +8,7 @@ skills-lock.json
 
 # Python.
 .venv/
+05_fase5_hadoop/mapreduce/entrada_generada/
 __pycache__/
 *.py[cod]
 .pytest_cache/

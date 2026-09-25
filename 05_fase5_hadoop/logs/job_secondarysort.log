@@ -1,0 +1,128 @@
+gcloud.cmd : Job [1e55e00add594834a00b839dcb24004d] submitted.
+En línea: 1 Carácter: 55
++ ... ig\gcloud'; gcloud.cmd dataproc jobs submit hadoop --project=bigdata- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Job [1e55e00add...04d] submitted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for job output...
+2026-09-25 20:16:17,157 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at 
+ciciot-fase5-m.us-central1-a.c.bigdata-proyecto1-ciciot2023.internal./10.128.0.2:8032
+2026-09-25 20:16:17,420 INFO client.AHSProxy: Connecting to Application History server at 
+ciciot-fase5-m.us-central1-a.c.bigdata-proyecto1-ciciot2023.internal./10.128.0.2:10200
+2026-09-25 20:16:17,790 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: 
+/tmp/hadoop-yarn/staging/root/.staging/job_1790366943595_0001
+2026-09-25 20:16:18,483 INFO input.FileInputFormat: Total input files to process : 1
+2026-09-25 20:16:18,617 INFO mapreduce.JobSubmitter: number of splits:1
+2026-09-25 20:16:19,094 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1790366943595_0001
+2026-09-25 20:16:19,094 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-09-25 20:16:19,415 INFO conf.Configuration: resource-types.xml not found
+2026-09-25 20:16:19,416 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-09-25 20:16:20,132 INFO impl.YarnClientImpl: Submitted application application_1790366943595_0001
+2026-09-25 20:16:20,432 INFO mapreduce.Job: The url to track the job: 
+http://ciciot-fase5-m.us-central1-a.c.bigdata-proyecto1-ciciot2023.internal.:8088/proxy/application_1790366943595_0001/
+2026-09-25 20:16:20,442 INFO mapreduce.Job: Running job: job_1790366943595_0001
+2026-09-25 20:16:38,846 INFO mapreduce.Job: Job job_1790366943595_0001 running in uber mode : false
+2026-09-25 20:16:38,847 INFO mapreduce.Job:  map 0% reduce 0%
+2026-09-25 20:16:51,051 INFO mapreduce.Job:  map 100% reduce 0%
+2026-09-25 20:17:02,138 INFO mapreduce.Job:  map 100% reduce 33%
+2026-09-25 20:17:15,239 INFO mapreduce.Job:  map 100% reduce 67%
+2026-09-25 20:17:16,250 INFO mapreduce.Job:  map 100% reduce 100%
+2026-09-25 20:17:17,267 INFO mapreduce.Job: Job job_1790366943595_0001 completed successfully
+2026-09-25 20:17:17,568 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=8399836
+		FILE: Number of bytes written=17955955
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=4790150
+		HDFS: Number of bytes written=4790263
+		HDFS: Number of read operations=18
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=9
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=1
+		Launched reduce tasks=4
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=30476100
+		Total time spent by all reduces in occupied slots (ms)=170036976
+		Total time spent by all map tasks (ms)=9300
+		Total time spent by all reduce tasks (ms)=51888
+		Total vcore-milliseconds taken by all map tasks=9300
+		Total vcore-milliseconds taken by all reduce tasks=51888
+		Total megabyte-milliseconds taken by all map tasks=30476100
+		Total megabyte-milliseconds taken by all reduce tasks=170036976
+	Map-Reduce Framework
+		Map input records=599987
+		Map output records=599987
+		Map output bytes=7199844
+		Map output materialized bytes=8399836
+		Input split bytes=132
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=8399836
+		Reduce input records=599987
+		Reduce output records=599992
+		Spilled Records=1199974
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=319
+		CPU time spent (ms)=13650
+		Physical memory (bytes) snapshot=1647542272
+		Virtual memory (bytes) snapshot=18861785088
+		Total committed heap usage (bytes)=1256194048
+		Peak Map Physical memory (bytes)=643031040
+		Peak Map Virtual memory (bytes)=4712464384
+		Peak Reduce Physical memory (bytes)=370061312
+		Peak Reduce Virtual memory (bytes)=4720238592
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=4790018
+	File Output Format Counters 
+		Bytes Written=4790263
+Job [1e55e00add594834a00b839dcb24004d] finished successfully.
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1e55e00add594834a00b839dcb24004d/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1e55e00add594834a00b839dcb24004d/driveroutput
+hadoopJob:
+  args:
+  - secondarysort
+  - /fase5/entrada/secondarysort
+  - /fase5/salidas/secondarysort
+  mainJarFileUri: file:///usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar
+jobUuid: b786e59a-6b46-3fbb-a12a-6ad2ca0f7c8f
+placement:
+  clusterName: ciciot-fase5
+  clusterUuid: 89790f33-75ce-40f5-aa71-d79c8c726e33
+reference:
+  jobId: 1e55e00add594834a00b839dcb24004d
+  projectId: bigdata-proyecto1-ciciot2023
+status:
+  state: DONE
+  stateStartTime: '2026-09-25T20:17:18.251063Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2026-09-25T20:16:09.280020Z'
+- state: SETUP_DONE
+  stateStartTime: '2026-09-25T20:16:09.387276Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2026-09-25T20:16:09.818501Z'
+yarnApplications:
+- memoryMbSeconds: '406787'
+  name: secondary sort
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://ciciot-fase5-m.us-central1-a.c.bigdata-proyecto1-ciciot2023.internal.:8088/proxy/application_1790366943595_0001/
+  vcoreSeconds: '121'

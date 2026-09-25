@@ -1,0 +1,154 @@
+gcloud.cmd : Job [07e97791c22e468597e2e95f99f8ee0c] submitted.
+En línea: 1 Carácter: 55
++ ... ig\gcloud'; gcloud.cmd dataproc jobs submit pyspark 'gs://ciciot2023- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Job [07e97791c2...e0c] submitted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for job output...
+HOST= ciciot-fase5-m JAR= ['/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar', 
+'/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-3.3.6.jar']
+$ hadoop version
+Hadoop 3.3.6
+Source code repository https://bigdataoss-internal.googlesource.com/third_party/apache/hadoop -r 
+8424d9552b6a186a1e0adc439510b10505b5714b
+Compiled by bigtop on 2026-08-30T07:36Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.7.1
+From source with checksum afca53245f7160b91433a087d476293f
+This command was run using /usr/lib/hadoop/hadoop-common-3.3.6.jar
+$ hadoop fs -mkdir -p gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/
+2026-09-25 20:23:42,400 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:23:42,582 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:23:42,582 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:23:44 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/9013a40f]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/secondarysort/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/9013a40f]. durationMs=381; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp /fase5/salidas/secondarysort/part-* 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/
+2026-09-25 20:23:49,387 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:23:49,602 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:23:49,603 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:23:51 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/06989a3f]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o/results%2Ffase5%2Fmapreduce%2Fsecondarysort?fields=bucket,name,timeCreated,updated,gene
+ration,metageneration,size,contentType,contentEncoding,md5Hash,crc32c,metadata; invocationId=gl-java/11.0.30 
+gdcl/2.1.1 linux/6.1.0 gccl-invocation-id/06989a3f]. durationMs=367; method=GET; thread=main [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -ls gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/
+2026-09-25 20:24:00,122 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:00,314 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:00,314 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:01 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/fcd32023]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o/results%2Ffase5%2Fmapreduce%2Fsecondarysort?fields=bucket,name,timeCreated,updated,gene
+ration,metageneration,size,contentType,contentEncoding,md5Hash,crc32c,metadata; invocationId=gl-java/11.0.30 
+gdcl/2.1.1 linux/6.1.0 gccl-invocation-id/fcd32023]. durationMs=374; method=GET; thread=main [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+Found 3 items
+-rwx------   3 root root    2720243 2026-09-25 20:23 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/part-r-00000
+-rwx------   3 root root     774525 2026-09-25 20:23 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/part-r-00001
+-rwx------   3 root root    1295495 2026-09-25 20:23 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/part-r-00002
+$ hadoop fs -mkdir -p gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/
+2026-09-25 20:24:07,125 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:07,321 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:07,321 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:09 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/0ff9e277]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/terasort/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/0ff9e277]. durationMs=426; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp /fase5/salidas/terasort/part-* 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/
+2026-09-25 20:24:14,723 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:14,929 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:14,929 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:16 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/a77e549c]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/terasort/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/a77e549c]. durationMs=394; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -ls gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/
+2026-09-25 20:24:26,127 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:26,355 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:26,355 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:28 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/352c4d1b]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/terasort/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/352c4d1b]. durationMs=429; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+Found 3 items
+-rwx------   3 root root   19911200 2026-09-25 20:24 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/part-r-00000
+-rwx------   3 root root   19140100 2026-09-25 20:24 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/part-r-00001
+-rwx------   3 root root   20947400 2026-09-25 20:24 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/part-r-00002
+$ hadoop fs -mkdir -p gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/pi/
+2026-09-25 20:24:33,334 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:33,503 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:33,503 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:35 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/fda11a6a]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/pi/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/fda11a6a]. durationMs=320; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp /fase5/salidas/pi/resultado.txt gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/pi/
+2026-09-25 20:24:40,565 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:40,793 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:40,793 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:24:42 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/d0494c42]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/pi/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/d0494c42]. durationMs=329; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -ls gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/pi/
+2026-09-25 20:24:49,692 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:24:49,873 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:24:49,873 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Found 1 items
+-rwx------   3 root root        158 2026-09-25 20:24 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/pi/resultado.txt
+Job [07e97791c22e468597e2e95f99f8ee0c] finished successfully.
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/07e97791c22e468597e2e95f99f8ee0c/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/07e97791c22e468597e2e95f99f8ee0c/driveroutput
+jobUuid: fe1cc5bf-5d84-3c92-8aa4-41851f755d6f
+placement:
+  clusterName: ciciot-fase5
+  clusterUuid: 89790f33-75ce-40f5-aa71-d79c8c726e33
+pysparkJob:
+  args:
+  - exportar
+  mainPythonFileUri: gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/hdfs_admin.py
+reference:
+  jobId: 07e97791c22e468597e2e95f99f8ee0c
+  projectId: bigdata-proyecto1-ciciot2023
+status:
+  state: DONE
+  stateStartTime: '2026-09-25T20:24:52.170273Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2026-09-25T20:23:28.939694Z'
+- state: SETUP_DONE
+  stateStartTime: '2026-09-25T20:23:29.038556Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2026-09-25T20:23:29.623058Z'

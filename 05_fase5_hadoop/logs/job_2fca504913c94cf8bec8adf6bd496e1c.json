@@ -1,0 +1,39 @@
+{
+  "done": true,
+  "driverControlFilesUri": "gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/2fca504913c94cf8bec8adf6bd496e1c/",
+  "driverOutputResourceUri": "gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/2fca504913c94cf8bec8adf6bd496e1c/driveroutput",
+  "jobUuid": "3a68a3cd-52d7-3c6a-b190-d6ff6a0c0d56",
+  "placement": {
+    "clusterName": "ciciot-fase5",
+    "clusterUuid": "89790f33-75ce-40f5-aa71-d79c8c726e33"
+  },
+  "pysparkJob": {
+    "args": [
+      "pi_hdfs"
+    ],
+    "mainPythonFileUri": "gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/hdfs_admin.py"
+  },
+  "reference": {
+    "jobId": "2fca504913c94cf8bec8adf6bd496e1c",
+    "projectId": "bigdata-proyecto1-ciciot2023"
+  },
+  "status": {
+    "state": "DONE",
+    "stateStartTime": "2026-09-25T20:22:12.895353Z"
+  },
+  "statusHistory": [
+    {
+      "state": "PENDING",
+      "stateStartTime": "2026-09-25T20:21:43.216372Z"
+    },
+    {
+      "state": "SETUP_DONE",
+      "stateStartTime": "2026-09-25T20:21:43.302306Z"
+    },
+    {
+      "details": "Agent reported job success",
+      "state": "RUNNING",
+      "stateStartTime": "2026-09-25T20:21:43.757410Z"
+    }
+  ]
+}

@@ -1,1 +1,5 @@
 01_fase1_datos/muestra/*.csv filter=lfs diff=lfs merge=lfs -text
+05_fase5_hadoop/logs/* -text
+05_fase5_hadoop/resultados/manifiesto.json -text
+results/fase5/mapreduce/** -text
+results/fase5/mapreduce/terasort/part-r-* filter=lfs diff=lfs merge=lfs -text

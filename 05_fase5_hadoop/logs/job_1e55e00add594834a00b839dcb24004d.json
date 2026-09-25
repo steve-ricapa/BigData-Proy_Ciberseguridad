@@ -1,0 +1,51 @@
+{
+  "done": true,
+  "driverControlFilesUri": "gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1e55e00add594834a00b839dcb24004d/",
+  "driverOutputResourceUri": "gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/1e55e00add594834a00b839dcb24004d/driveroutput",
+  "hadoopJob": {
+    "args": [
+      "secondarysort",
+      "/fase5/entrada/secondarysort",
+      "/fase5/salidas/secondarysort"
+    ],
+    "mainJarFileUri": "file:///usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar"
+  },
+  "jobUuid": "b786e59a-6b46-3fbb-a12a-6ad2ca0f7c8f",
+  "placement": {
+    "clusterName": "ciciot-fase5",
+    "clusterUuid": "89790f33-75ce-40f5-aa71-d79c8c726e33"
+  },
+  "reference": {
+    "jobId": "1e55e00add594834a00b839dcb24004d",
+    "projectId": "bigdata-proyecto1-ciciot2023"
+  },
+  "status": {
+    "state": "DONE",
+    "stateStartTime": "2026-09-25T20:17:18.251063Z"
+  },
+  "statusHistory": [
+    {
+      "state": "PENDING",
+      "stateStartTime": "2026-09-25T20:16:09.280020Z"
+    },
+    {
+      "state": "SETUP_DONE",
+      "stateStartTime": "2026-09-25T20:16:09.387276Z"
+    },
+    {
+      "details": "Agent reported job success",
+      "state": "RUNNING",
+      "stateStartTime": "2026-09-25T20:16:09.818501Z"
+    }
+  ],
+  "yarnApplications": [
+    {
+      "memoryMbSeconds": "406787",
+      "name": "secondary sort",
+      "progress": 1.0,
+      "state": "FINISHED",
+      "trackingUrl": "http://ciciot-fase5-m.us-central1-a.c.bigdata-proyecto1-ciciot2023.internal.:8088/proxy/application_1790366943595_0001/",
+      "vcoreSeconds": "121"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+gcloud.cmd : Job [0e85e4ef8a5849db8df10c0bd13480cc] submitted.
+En línea: 1 Carácter: 209
++ ... | Out-Null; gcloud.cmd dataproc jobs submit pyspark 'gs://ciciot2023- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Job [0e85e4ef8a...0cc] submitted.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Waiting for job output...
+HOST= ciciot-fase5-m JAR= ['/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar', 
+'/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples-3.3.6.jar']
+$ hadoop version
+Hadoop 3.3.6
+Source code repository https://bigdataoss-internal.googlesource.com/third_party/apache/hadoop -r 
+8424d9552b6a186a1e0adc439510b10505b5714b
+Compiled by bigtop on 2026-08-30T07:36Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.7.1
+From source with checksum afca53245f7160b91433a087d476293f
+This command was run using /usr/lib/hadoop/hadoop-common-3.3.6.jar
+$ hadoop fs -cp /fase5/salidas/secondarysort/_SUCCESS 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/secondarysort/
+2026-09-25 20:26:32,019 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:26:32,227 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:26:32,227 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:26:34 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/ef888d34]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o/results%2Ffase5%2Fmapreduce%2Fsecondarysort?fields=bucket,name,timeCreated,updated,gene
+ration,metageneration,size,contentType,contentEncoding,md5Hash,crc32c,metadata; invocationId=gl-java/11.0.30 
+gdcl/2.1.1 linux/6.1.0 gccl-invocation-id/ef888d34]. durationMs=376; method=GET; thread=main [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp /fase5/salidas/terasort/_SUCCESS 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/
+2026-09-25 20:26:41,926 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:26:42,089 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:26:42,090 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:26:43 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/3cfff4d5]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o?delimiter=/&fields=items(bucket,name,timeCreated,updated,generation,metageneration,size
+,contentType,contentEncoding,md5Hash,crc32c,metadata),prefixes,nextPageToken&includeFoldersAsPrefixes=false&includeTrai
+lingDelimiter=true&maxResults=1&prefix=results/fase5/mapreduce/terasort/; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/3cfff4d5]. durationMs=340; method=GET; thread=gcsfs-misc-0 [CONTEXT 
+ratelimit_period="10 SECONDS" ]
+$ hadoop fs -cp /fase5/salidas/terasort/_partition.lst 
+gs://ciciot2023-bigdata-utec-proyecto1-gm/results/fase5/mapreduce/terasort/
+2026-09-25 20:26:51,108 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-09-25 20:26:51,280 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-09-25 20:26:51,280 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+Sep 25, 2026 8:26:52 PM com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.util.RequestTracker stopTracking
+INFO: [gccl-invocation-id/a475f2e0]: Detected high latency for [url=https://storage.googleapis.com/storage/v1/b/ciciot2
+023-bigdata-utec-proyecto1-gm/o/results%2Ffase5%2Fmapreduce%2Fterasort?fields=bucket,name,timeCreated,updated,generatio
+n,metageneration,size,contentType,contentEncoding,md5Hash,crc32c,metadata; invocationId=gl-java/11.0.30 gdcl/2.1.1 
+linux/6.1.0 gccl-invocation-id/a475f2e0]. durationMs=340; method=GET; thread=main [CONTEXT ratelimit_period="10 
+SECONDS" ]
+$ hadoop fs -ls -R /fase5/salidas
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:22 /fase5/salidas/pi
+-rw-r--r--   2 root hadoop        158 2026-09-25 20:22 /fase5/salidas/pi/resultado.txt
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:17 /fase5/salidas/secondarysort
+-rw-r--r--   2 root hadoop          0 2026-09-25 20:17 /fase5/salidas/secondarysort/_SUCCESS
+-rw-r--r--   2 root hadoop    2720243 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00000
+-rw-r--r--   2 root hadoop     774525 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00001
+-rw-r--r--   2 root hadoop    1295495 2026-09-25 20:17 /fase5/salidas/secondarysort/part-r-00002
+drwxr-xr-x   - root hadoop          0 2026-09-25 20:18 /fase5/salidas/terasort
+-rw-r--r--   1 root hadoop          0 2026-09-25 20:18 /fase5/salidas/terasort/_SUCCESS
+-rw-r--r--  10 root hadoop         22 2026-09-25 20:17 /fase5/salidas/terasort/_partition.lst
+-rw-r--r--   1 root hadoop   19911200 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00000
+-rw-r--r--   1 root hadoop   19140100 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00001
+-rw-r--r--   1 root hadoop   20947400 2026-09-25 20:18 /fase5/salidas/terasort/part-r-00002
+Job [0e85e4ef8a5849db8df10c0bd13480cc] finished successfully.
+done: true
+driverControlFilesUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/0e85e4ef8a5849db8df10c0bd13480cc/
+driverOutputResourceUri: gs://dataproc-staging-us-central1-698285774089-wggxreuy/google-cloud-dataproc-metainfo/89790f33-75ce-40f5-aa71-d79c8c726e33/jobs/0e85e4ef8a5849db8df10c0bd13480cc/driveroutput
+jobUuid: 060d41b3-0096-32f7-accb-c7f94cd995f7
+placement:
+  clusterName: ciciot-fase5
+  clusterUuid: 89790f33-75ce-40f5-aa71-d79c8c726e33
+pysparkJob:
+  args:
+  - marcadores
+  mainPythonFileUri: gs://ciciot2023-bigdata-utec-proyecto1-gm/processed/fase5/hdfs_admin.py
+reference:
+  jobId: 0e85e4ef8a5849db8df10c0bd13480cc
+  projectId: bigdata-proyecto1-ciciot2023
+status:
+  state: DONE
+  stateStartTime: '2026-09-25T20:27:02.287988Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2026-09-25T20:26:17.242510Z'
+- state: SETUP_DONE
+  stateStartTime: '2026-09-25T20:26:17.335269Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2026-09-25T20:26:17.817029Z'
