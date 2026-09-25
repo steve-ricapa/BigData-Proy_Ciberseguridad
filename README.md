@@ -4,7 +4,9 @@ Proyecto universitario para el análisis distribuido del dataset CIC-IoT-2023 en
 
 ## Estado actual
 
-- **Fase actual:** Fase 2 — Configuración de GCP.
+- **Fases completadas:** Fase 1 — Dataset; Fase 2 — Configuración de GCP; Fase 3 — Diseño de arquitectura.
+- **Fase actual:** Fase 4 — Procesamiento distribuido (pendiente).
+- **Documento de arquitectura:** `03_fase3_arquitectura/documentacion/arquitectura_big_data.md`
 - **Proyecto GCP:** `bigdata-proyecto1-ciciot2023`
 - **Bucket:** `gs://ciciot2023-bigdata-utec-proyecto1-gm/`
 - **Región del bucket:** `US-CENTRAL1`
